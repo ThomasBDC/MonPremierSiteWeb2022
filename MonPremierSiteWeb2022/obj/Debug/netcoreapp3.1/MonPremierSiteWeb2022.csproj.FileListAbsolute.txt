@@ -351,3 +351,4 @@ C:\Users\Thomas BDC\source\repos\MonPremierSiteWeb2022\MonPremierSiteWeb2022\obj
 C:\Users\Thomas BDC\source\repos\MonPremierSiteWeb2022\MonPremierSiteWeb2022\obj\Debug\netcoreapp3.1\MonPremierSiteWeb2022.pdb
 C:\Users\Thomas BDC\source\repos\MonPremierSiteWeb2022\MonPremierSiteWeb2022\obj\Debug\netcoreapp3.1\MonPremierSiteWeb2022.genruntimeconfig.cache
 C:\Users\Thomas BDC\source\repos\MonPremierSiteWeb2022\MonPremierSiteWeb2022\obj\Debug\netcoreapp3.1\Razor\Views\Home\Dominique.cshtml.g.cs
+C:\Users\Thomas BDC\source\repos\MonPremierSiteWeb2022\MonPremierSiteWeb2022\obj\Debug\netcoreapp3.1\Razor\Views\MVC\Index.cshtml.g.cs
