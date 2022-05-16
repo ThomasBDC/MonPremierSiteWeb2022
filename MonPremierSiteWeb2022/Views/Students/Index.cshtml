@@ -1,0 +1,10 @@
+﻿@model StudentsViewModel;
+
+<h1>Liste des étudiants</h1>
+
+@foreach(var student in Model.lstStudents)
+{
+    <p>
+        @student.Nom @student.Prenom (@student.Promo)
+    </p>
+}
