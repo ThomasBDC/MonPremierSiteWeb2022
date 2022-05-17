@@ -1,0 +1,37 @@
+﻿<!-- On définit le model de la page -->
+@model StudentsViewModel;
+    
+@* On définit le titre de la page, et on peut mettre d'autres données *@
+@{
+    ViewData["Title"] = "Liste des étudiants";
+    ViewData["Description"] = "Voir la liste des étudiants de l'école studi.";
+}
+
+@* Le code ci dessous ira dans le header, la où on importe les fichiers css -> @RenderSection("Style", required: false) *@
+@section style{
+    <link rel="stylesheet" href="~/css/students/students.css" />
+}
+
+@* -------------------------- Début du contenu de la page------------------------ *@
+<h1>@ViewData["Title"]</h1>
+
+<h3>Mouette et Chandon</h3>
+<img src="/img/mouette.jpg" />
+
+<div class="allStudents">
+    @foreach(var student in Model.lstStudents)
+    {
+        <div class="student">
+            @student.Nom @student.Prenom (@student.Promo)
+        </div>
+    }
+</div>
+
+@* --------------------------Fin du contenu de la page------------------------ *@
+
+<!-- Le code ci dessous ira dans avant la fin du body, la où on importe les fichiers JS -->
+@section scripts{
+    <script>
+        //Ici le script html
+    </script>
+}

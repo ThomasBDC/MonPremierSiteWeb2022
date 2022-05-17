@@ -5,7 +5,7 @@ namespace MonPremierSiteWeb2022.Controllers
 {
     public class StudentsController : Controller
     {
-        public IActionResult Index()
+        public IActionResult IndexStudents()
         {
             //Récupération des données en BDD (ici une liste) modèle de domaine
             var tousMesEleves = StudentsDatas.allStudents;
