@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using MonPremierSiteWeb2022.Models;
+using MonPremierSiteWeb2022.Models.Students.Cours;
 
 namespace MonPremierSiteWeb2022.Controllers
 {
@@ -17,6 +18,19 @@ namespace MonPremierSiteWeb2022.Controllers
             };
 
             //On passe le viewModel à la vue
+            return View(vm);
+        }
+
+
+        public IActionResult CoursForStudent(int idStudent)
+        {
+            var allCours = CoursRepository.GetCoursForStudents(idStudent);
+
+            var vm = new CoursViewModel()
+            {
+                listCours = allCours
+            };
+
             return View(vm);
         }
     }

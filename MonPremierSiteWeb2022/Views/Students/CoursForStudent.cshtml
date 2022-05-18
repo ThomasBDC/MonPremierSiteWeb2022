@@ -1,0 +1,30 @@
+﻿@model CoursViewModel
+
+@{
+    ViewData["Title"] = "Les cours de l'étudiant";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+
+<table class="table table-dark table-striped table-hover">
+    <thead>
+        <tr>
+            <th>IdCours</th>
+            <th>Nom du cours</th>
+            <th>Nom de la matière</th>
+            <th>IdEtudiant</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var cours in Model.listCours)
+        {
+            <tr>
+                <td>@cours.CoursId</td>
+                <td>@cours.CoursName</td>
+                <td>@cours.Matiere</td>
+                <td>@cours.idStudentPresentation</td>
+            </tr>
+        }    
+    </tbody>
+</table>
