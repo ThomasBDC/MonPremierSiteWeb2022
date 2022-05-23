@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using MonPremierSiteWeb2022.Models;
 using System;
@@ -18,6 +19,7 @@ namespace MonPremierSiteWeb2022.Controllers
             _logger = logger;
         }
 
+
         public IActionResult Index()
         {
             return View();
@@ -29,6 +31,11 @@ namespace MonPremierSiteWeb2022.Controllers
         }
 
         public IActionResult Dominique()
+        {
+            return View();
+        }
+
+        public IActionResult Connect()
         {
             return View();
         }
